@@ -49,14 +49,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'f20792bb6e310104352ff08f8ce125305d077cf3');
-define('SECURE_AUTH_KEY',  '7ba78601fefc395455f3f71d69a023c253bc386a');
-define('LOGGED_IN_KEY',    '2a72f79166ec335e7e4eb2ccb04446f5108601d3');
-define('NONCE_KEY',        'fe95884096d56af1864fb19649e95e3cc1bc68c3');
-define('AUTH_SALT',        'cade9fafce88eb0c9e888362cfcc0980023f13e0');
-define('SECURE_AUTH_SALT', '535d7dc8848c028218d9693fd809194f692658f3');
-define('LOGGED_IN_SALT',   '9e4c9d523754d3d6578c35c0fdb1ae1cc0ed80f5');
-define('NONCE_SALT',       '6bd297eaf2041408d9dd173eec3e8b55f5eea12c');
+define('AUTH_KEY',         $_ENV['AUTH_KEY']);
+define('SECURE_AUTH_KEY',  $_ENV['SECURE_AUTH_KEY']);
+define('LOGGED_IN_KEY',    $_ENV['LOGGED_IN_KEY']);
+define('NONCE_KEY',        $_ENV['NONCE_KEY']);
+define('AUTH_SALT',        $_ENV['AUTH_SALT']);
+define('SECURE_AUTH_SALT', $_ENV['SECURE_AUTH_SALT']);
+define('LOGGED_IN_SALT',   $_ENV['LOGGED_IN_SALT']);
+define('NONCE_SALT',       $_ENV['NONCE_SALT']);
 
 /**#@-*/
 
