@@ -1,0 +1,1085 @@
+/*
+Theme Name: 7cam
+@charset "utf-8";
+@media (min-width: 1024px) {
+#wrap {
+  width: 640px;
+  margin: 0 auto;
+}
+
+#content {
+  width: 640px;
+  float: left;
+}
+
+#sidebar {
+  width: 300px;
+  float: right;
+}
+ 
+}
+img {max-width: 100%; height: auto;}
+*/
+
+@charset "Shift_JIS";
+/*
+  セブン-イレブン・ジャパン セブン-イレブンキャンペーン
+  summary: common style
+  LastUpDate: 2010-10
+----------------------------------------*/
+/* reset
+========================================*/
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+fieldset,
+input,
+textarea,
+table {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+html { overflow-y: scroll; }
+table {
+	border: 0;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+fieldset { border: 0; }
+select { font-size: 100%; }
+img {
+	border: 0;
+	vertical-align: bottom;
+}
+em,
+th {
+	font-style: normal;
+	font-weight: normal;
+}
+th,
+td { padding: 0; }
+th {
+	font-weight: normal;
+	text-align: left;
+}
+ol,
+ul { list-style-type: none; }
+hr { display: none; }
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #38389e;
+	text-decoration: underline;
+}
+/* layout
+========================================*/
+body {
+	position:relative;
+	color: #333;
+	font-size:14px;
+	/font-size:90%;
+	font-family:Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+kbd{font-family:Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;}
+html>/**/body{font-size:90%;}
+#container {
+	line-height:1.5;
+	background:#ffffff;
+}
+
+.logo,
+.topbar,
+#content,
+.totop {
+	width:760px;
+	margin: 0 auto;
+}
+
+#content {
+	background:#fff;
+}
+
+#p101 #content,
+#p116 #content { background:#ffffff;
+}
+
+#contentIn {}
+#main {
+	min-height:0px;
+	height:auto !important;
+	height:370px;
+	padding:10px 10px 0;
+
+}
+#top #main,
+#p101 #main,
+#p116 #main {
+	float:left;
+	display:inline;
+	width:530px;
+	padding:0 0 8px;
+	margin-left:10px;
+}
+
+#p116 .section { padding:6px 16px 0; }
+/* #side
+----------------------------------------*/
+#side {
+	float:right;
+	display:grid;
+	width:196px;
+	padding:0 7px;
+	text-align:center;
+}
+#top #side,
+#p101 #side,
+#p116 #side {
+	width:200px;
+	margin-left:10px;
+	padding:0;
+	background:none;
+}
+/* .blockC
+----------------------------------------*/
+.blockC {
+	width: 500px;
+	margin: 0 auto;
+}
+/* .logo
+----------------------------------------*/
+.logo { padding: 6px 6px 2px; }
+.mypage {
+	margin:1px 1px 0;
+	padding:3px 0 3px 8px;
+	background:#ffffff;
+	font-size:116%;
+	font-weight: bold;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.gNav {
+	padding-top:7px;
+}
+.gNav li {
+	margin:0 0 5px 7px;
+	padding-left:20px;
+	font-weight:bold;
+}
+/* footer
+----------------------------------------*/
+#footer {
+	position:relative;
+	z-index:1;
+	width: 760px;
+	margin: 0 auto;
+	background:url(../../uploads/cmn/footer_copy_bg.gif) no-repeat;
+	height:60px;
+
+}
+#footer div,
+#footer .copy {
+	width: 760px;
+	margin: 0 auto;
+}
+#footer div {
+	position:relative;
+	z-index:3;
+	line-height:1;
+	font-size:0;
+	padding-top:5px;
+}
+#footer li {
+	float: left;
+}
+#footer .copy {
+	position:relative;
+	z-index:2;
+	margin:18px 0 20px 0;
+	text-align:center;
+	font-size:0px;
+	line-height:0px;
+}
+
+/* 2014/05/01追加 */
+#footer.slim {
+	position:relative;
+	z-index:1;
+	width: 760px;
+	margin: 0 auto;
+	background:url(../../uploads/cmn/footer_copy_bg.gif) no-repeat 0 bottom;
+	height:34px;
+
+}
+#footer.slim .copy {
+	position:relative;
+	z-index:2;
+	margin:0;
+	padding:9px 0 0;
+	text-align:center;
+	font-size:0px;
+	line-height:0px;
+}
+
+
+/* clearfix
+----------------------------------------*/
+#contentIn,
+#top .gNav,
+#footer ul { /zoom : 1;
+}
+#contentIn:after,
+#top .gNav:after,
+#footer ul:after {
+	content : '';
+	display : block;
+	clear : both;
+}
+
+/*Fair
+-----------------------------------------*/
+em {
+	text-decoration: none;
+	font-style: normal;
+}
+
+@charset "Shift_JIS";
+/*
+  セブン-イレブン・ジャパン セブン-イレブンキャンペーン
+  summary: common modules
+  LastUpDate: 2010-10
+----------------------------------------*/
+/* common modules
+========================================*/
+/* form.entry
+----------------------------------------*/
+form.entry { margin:0 10px; }
+form.entry dl {
+	position: relative;
+	background: url(../../uploads/cmn/line_dotted.gif) repeat-x left bottom;
+	margin-bottom: 21px;
+}
+form.entry dt {
+	float: left;
+	clear: both;
+	width: 220px;
+	padding: 11px 0 11px 23px;
+	background: url(../../uploads/cmn/bg_entry.gif) no-repeat 0 0;
+	font-weight:bold;
+}
+form.entry dt span {
+	font-size:85%;
+	font-weight:normal;
+	color:#F00;
+}
+form.entry dd {
+	float:left;
+ /float:none;
+	width: 463px;
+	min-height: 21px;
+	height:auto !important;
+	height:21px;
+	padding: 10px 0 7px;
+	background: url(../../uploads/cmn/line_dotted.gif) repeat-x 0 0;
+	text-align :left;
+}
+*:first-child+html form.entry dd label,
+*:first-child+html form.entry dd span{
+	zoom:1;
+}
+form.entry .mypageNote {
+	padding: 0 0 0 13px;
+}
+form.entry .example {
+	padding-left:5px;
+	font-size:84%;
+}
+form.entry .zipCode .hedge {
+	display: block;
+	width: 110px;
+	margin: -21px 0 0 150px;
+	padding: 0 0 0 13.5em; /* 150617修正 */
+	text-indent: -1em;
+	line-height: 1.1;
+	font-size: 84%;
+	color: #666;
+}
+form.entry .btn {
+	position: relative;
+	clear: both;
+	width: 148px;
+	height:38px;
+	margin-left: 367px;
+	z-index: 2;
+ /zoom: 1;
+}
+/* form.correct
+------------------------------*/
+form.correct {
+	position: relative;
+	width: 335px;
+	margin: -38px 0 0 204px;
+	z-index: 1;
+}
+#p302 form.correct {
+	margin: -118px 0 0 204px;
+	padding-bottom:40px;
+}
+/* form.loginForm
+------------------------------*/
+form.loginForm {
+	width: 530px;
+	margin: 20px 0 40px 98px;
+	padding-bottom:40px;
+	background: url(../../uploads/cmn/bg_radius_btm.gif) no-repeat left bottom;
+}
+#p100 form.loginForm { margin-bottom:5px; }
+form.loginForm dl { background: url(../../uploads/cmn/bg_radius_top.gif) no-repeat 0 0;  /zoom:1;
+}
+form.loginForm dt {
+	width: 145px;
+	padding: 43px 10px 16px 0;
+	text-align: right;
+}
+form.loginForm dd {
+	margin-top: -33px;
+	padding: 0 10px 20px 152px;
+}
+form.loginForm dd span {
+	display:block;
+	margin:-1.8em 0 0 220px;
+	padding-right:.2em;
+	font-size:84%;
+	color:#666;
+}
+#p302 form.loginForm dd { font-weight: bold; }
+#p302 form.loginForm .btn {
+	position:relative;
+	clear:both;
+	width: 148px;
+	height:38px;
+	margin:10px 0 0 280px;
+	z-index:2;
+}
+
+/* input
+------------------------------*/
+form.loginForm dd input { *font-size: 117%;
+}
+#email,
+#pw {
+	width: 202px;
+	padding-left: .2em;
+	padding-right: .2em;
+}
+#birth {
+	width: 5em;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+#sexMale,
+#sexFemale,
+#mypageYes,
+#mypageNo,
+#melmaNanacoYes,
+#melmaNanacoNo,
+#melmaSevenYes,
+#melmaSevenNo {
+	height: 1.1em;
+	margin-right: 2px;
+	vertical-align: baseline;
+ /vertical-align: middle;
+}
+#sexFemale,
+#mypageNo,
+#melmaNanacoNo,
+#melmaSevenNo { margin-left: .5em; }
+#firstName,
+#firstNameKana,
+#familyName,
+#familyNameKana { width: 6.5em; }
+#zipCode1 { width: 2em; }
+#zipCode2 {
+	width: 2.5em;
+	margin-right: 2px;
+}
+#city,
+#houseNum,
+#houseName { width: 18em; }
+#tel1,
+#tel2,
+#tel3 { width: 3.5em; }
+
+#nanaco1,
+#nanaco2,
+#nanaco3,
+#nanaco4 { width: 4em; }
+/* hX
+------------------------------*/
+h1 {
+	margin:0 0 15px;
+	padding-left:10px;
+	border-left:#ed5c03 solid 4px;
+	text-align: left;
+	color:#50281e;
+	font-size:130%;
+	background:#e6e6e6;
+ /zoom:1;
+}
+#error h1 {
+	padding:0;
+	border:none;
+	background:none;
+}
+#top h1{
+	margin:0;
+	padding:0;
+	border:none;
+}
+#p101 h1{
+	margin:16px 0 0 16px;
+	padding:0;
+	border:none;
+	background:none;
+}
+
+/* inline element
+------------------------------*/
+strong,
+.note { color:#F00;}
+p.note{
+	padding:0 0 30px;
+}
+.positionC {
+	margin:10px 0;
+	text-align: center;
+}
+
+.btu_padding{
+	margin:0 0 8px 0;
+}
+
+/* .lead
+------------------------------*/
+.lead { margin:0 0 10px 10px; }
+
+.lead_center{
+    float:left;
+	margin:0 0 5px;
+	width:530px;
+}
+
+
+/* .link
+------------------------------*/
+.link {
+	margin: 40px 0 0;
+	padding:19px 0 20px;
+	background:url(../../uploads/cmn/line_dotted.gif) repeat-x 0 0;
+	text-align: center;
+}
+#error .link{
+	margin-bottom:10px;
+	padding:0;
+	background:none;
+}
+.p012 .link { padding-left:176px; }
+.p012 .link li {
+	float: left;
+	margin: 0 20px 0 0;
+}
+/* .hedge
+------------------------------*/
+p.hedge,
+ul.hedge li {
+	padding-left: 1em;
+	text-indent: -1em;
+
+}
+.lead .hedge { color: #666; }
+form .hedge {
+	margin:1em 0;
+	color: #666;
+}
+#top .hedge{
+	margin-top:15px;
+	color:#666;
+}
+/* .endInfo
+------------------------------*/
+.endInfo {
+	padding: 5px 10px;
+	margin: 20px 0 10px;
+	border: 1px solid #787878;
+	background-color: #ECECEC;
+	color: #5B5B5B;
+}
+.endInfo dt {
+	font-size: 117%;
+}
+
+/* .noteBox
+------------------------------*/
+.noteBox {
+	margin: 20px 0;
+	padding: 5px 15px 10px;
+	background: #F0F0F0;
+}
+.noteBox dt { text-align:center; }
+/* #side
+------------------------------*/
+.logout{padding:18px 0 12px;}
+#p116 .logout{background:url(../../uploads/cmn/line_solid.gif) repeat-x bottom;}
+
+/* 130527追加 */
+.snsArea { background:url(../../uploads/cmn/side_bg.gif) repeat-y; padding:0px; margin:10px 0px 10px 0px;} 
+.snsArea p {margin:0;}
+.snsArea dl {padding:0 0 15px; margin:0px; background:url(../../uploads/cmn/side_btm.gif) center bottom no-repeat;}
+.snsArea dt {padding:0px; margin:0px;font-size:1px;}
+.snsArea dd {padding:0px; margin:0px;}
+.snsArea ul {
+	overflow:hidden;
+	margin:10px 15px 0;
+	padding:0;
+}
+.snsArea li {
+	float:left;
+	margin:0 10px 0 0;
+}
+.snsArea li:nth-of-type(3){
+	margin:0;
+}
+.snsArea li.instagram{
+	margin:0;
+}
+
+.snsArea p.fbComment {margin:0 10px 10px; text-align:left; line-height:1.3;}
+
+.snsArea .facebookArea{
+	margin:0 9px 10px;
+	padding:0;
+	width:182px;
+	overflow:hidden;
+	text-align:left;
+	background:none;
+}
+.snsArea .facebookArea dt{
+	float:left;
+	width:50px;
+}
+.snsArea .facebookArea dd{
+	float:right;
+	width:127px;
+	font-size:13px;
+	font-weight:bold;
+	line-height:1.3;
+	font-family:'lucida grande',tahoma,verdana,arial,"hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif;
+}
+.snsArea .facebookArea dd .sejlink{
+	margin:0 0 5px;
+}
+.snsArea .facebookArea dd a{
+	text-decoration:none;
+	color:#3B5998;
+}
+/* /130527追加 */
+
+.bnr { background:url(../../uploads/cmn/side_bg.gif) repeat-y; padding:0px; margin:10px 0px 10px 0px;}
+.bnr dl {padding:0 0 15px; margin:0px; background:url(../../uploads/cmn/side_btm.gif) center bottom no-repeat;}
+.bnr dt {padding:0px; margin:0px;font-size:1px;}
+.bnr dd {padding:0px; margin:0px;}
+.bnr ul {padding:0px; margin:0px;}
+.bnr li {padding:0px; margin:10px 0 0;}
+
+/* 131003追加　131113変更 */
+.serialApp { background:url(../../uploads/cmn/side_bg.gif) repeat-y; padding:0px; margin:10px 0px 10px 0px;}
+.serialApp dl {padding:0 0 15px; margin:0px; background:url(../../uploads/cmn/side_btm.gif) center bottom no-repeat;}
+.serialApp dt {padding:0px; margin:0px;font-size:1px;}
+.serialApp dd {padding:0px; margin:0px;}
+.serialApp .bnrApp{padding:0; margin:0 0 8px;}
+.serialApp .btnDetail {margin:0 0 10px;}
+.serialApp .txtDL {padding:0px; margin:0 0 10px;}
+.serialApp dl.qr {background:url(../../uploads/cmn/kantan_border.gif) no-repeat center top;padding:10px 0 15px;margin:3px 0 0;}
+.serialApp dl.qr dt {margin:0;padding:0;}
+.serialApp dl.qr dd {text-align:center;margin:20px 0 0;padding:0;}
+
+/* .remind
+------------------------------*/
+.remind {
+	float: left;
+	display:inline;
+	margin-left:100px;
+	padding-right: 10px;
+}
+/* .totop
+----------------------------------------*/
+.totop {
+	clear: both;
+	padding: 10px 8px 10px;
+	text-align: right;
+}
+/* .error
+------------------------------*/
+div.error {
+	clear: both;
+	margin: 20px 0px 25px 0px;
+	padding: 10px 15px 5px;
+	background: #FEE;
+	border: solid 1px #F00;
+	color: #F00;
+}
+div.error a { padding-right:9px; }
+div.error li{
+	list-style:inside square;
+	padding-left:1em;
+	text-indent:-1em;
+}
+.errorBox {
+	width: 548px;
+	margin: 50px auto 70px;
+	padding: 15px 10px 30px 8px;
+	border:#ccc 2px solid;
+}
+#top .error{
+	margin:5px 9px 12px 8px;
+	padding:0 0 3px 12px;
+	text-align:left;
+	}
+#top .error li{
+	margin:0;
+	padding:0 0 5px;
+	list-style:none outside;
+	text-indent:0;
+}
+/* .smpNav
+------------------------------*/
+.smpNav{
+	font-size:80%;
+	margin:15px 0 10px 0;
+	text-align:center;
+	padding:10px 0;
+	background:#e6e6e6;
+}
+.smpNav a{
+	color:#600;	
+}
+.smpNav .current{
+	font-weight:bold;
+}
+
+hr.smpNavl {
+height: 1px;
+border: none;
+border-top: 1px #000000 solid;
+}
+
+/* .item
+------------------------------*/
+.item{
+	float: left;
+	width:530px;
+	margin:10px auto;
+	padding:0px;
+	background:url(../../uploads/cmn/item_bg.gif) repeat-y;
+/*	text-align: left;*/
+}
+
+.item h2{
+	text-align:center;
+}
+
+.item h3{
+	text-align:center;
+}
+
+.item .i_course{
+	margin:7px;
+	width:512px;
+	text-align:center;
+	display:inline-block;
+	border:2px solid #ec6d74;
+	padding:3px 0;
+}
+
+/* 2015.5月フェア用 */
+.item .i_course_atari{
+	border:2px solid #ec6d74;
+}
+/* /2015.5月フェア用 */
+
+.item .i_course .btm_area{
+	margin-top:5px;
+	width:510px;
+	padding-left:6px;
+	overflow:hidden;
+}
+.item .i_course .btm_a_l{
+	float:left;
+	width:345px;
+	padding-top:7px;
+}
+.item .i_course .btm_a_r{float:left; width:160px;}
+
+.item .i_course_sub{text-align:center;}
+
+.item .i_c_lbutton{text-align:left;padding:0 5px 5px 5px;}
+
+.item .itm_copy{padding-left:10px;}
+
+.item .i_course_taisyo{
+	margin:7px;
+	padding:0 0 5px;
+	width:512px;
+	text-align:center;
+	display:inline-block;
+	border:2px solid #CF0C3B;
+}
+
+/* .clear
+------------------------------*/
+.clear { clear: both; }
+#content,
+form.entry dl,
+#top #gNav ul,
+.link { /zoom : 1;}
+#content:after,
+form.entry dl:after,
+#top #gNav ul:after,
+.link:after {
+	content : '';
+	display : block;
+	clear : both;
+}
+
+
+/* .itemBottom  IE8用 2012/01/26
+------------------------------*/
+.itemBottom{
+	font-size:0px;
+	line-height:100%;
+}
+
+/* フェア用.bottom_lead
+------------------------------*/
+.bottom_lead{
+	padding:10px;
+	margin:15px 0;
+	border:solid #787878 1px;
+	background:#f9f9f9;
+}
+.bottom_lead .heade{
+	color:#666;
+}
+
+
+/* .hidePct 
+印刷・右クリック保存禁止 2017/4/20 更新
+------------------------------*/
+/* メイン画像 */
+.mainHidePctCommon{
+	position:relative;
+	width:760px;
+	height:100px;
+	background:url(../img/img_ttl.jpg) no-repeat left top;
+}
+
+
+.mainHidePct{
+	position:relative;
+	width:760px;
+	height:400px;
+}
+
+.mainHidePct.start{
+	background:url(../img/img_main_start.jpg) no-repeat left top;
+}
+.mainHidePct.notice{
+	background:url(../img/img_main.jpg) no-repeat left top;
+}
+.mainHidePct.end{
+	background:url(../img/img_main_end.jpg) no-repeat left top;
+}
+.mainHidePct span,
+.mainHidePctCommon span{
+	position:absolute;
+	display:block;
+	top:0; left:0;
+	width:100%; height:100%;
+}
+.mainHidePct span img,
+.mainHidePctCommon span img{
+	width:100%; height:100%;
+}
+
+/* キャンペーン商品画像 */
+.itemHidePct{
+	position:relative;
+	width:512px;
+}
+
+.itemHidePct.item01_01{
+	height:180px;
+	background:url(../img/item_c_01_01.jpg) no-repeat left top;
+}
+
+.itemHidePct.item02_01{
+	height:240px;
+	background:url(../img/item_c_02_01.jpg) no-repeat left top;
+}
+.itemHidePct.item02_02{
+	height:221px;
+	background:url(../img/item_c_02_02.jpg) no-repeat left top;
+}
+.itemHidePct.item02_03{
+	height:284px;
+	background:url(../img/item_c_02_03.jpg) no-repeat left top;
+}
+.itemHidePct.item02_04{
+	height:277px;
+	background:url(../img/item_c_02_04.jpg) no-repeat left top;
+}
+.itemHidePct.item02_05{
+	height:232px;
+	background:url(../img/item_c_02_05.jpg) no-repeat left top;
+}
+
+.itemHidePct span{
+	position:absolute;
+	display:block;
+	top:0; left:0;
+	width:100%; height:100%;
+}
+.itemHidePct span img{
+	width:100%; height:100%;
+}
+
+/* 対象商品画像 */
+.taisyoHidePct{
+	position:relative;
+	width:512px;
+	height:250px;
+	background:url(../img/item_products.jpg) no-repeat left top;
+}
+.taisyoHidePct span{
+	position:absolute;
+	display:block;
+	top:0; left:0;
+	width:100%; height:100%;
+}
+.taisyoHidePct span img{
+	width:100%; height:100%;
+}
+
+
+
+@media print{
+.mainHidePct, .itemHidePct, .taisyoHidePct{display:none;}
+}
+
+@charset "Shift_JIS";
+/*
+  セブン-イレブン・ジャパン セブン-イレブンキャンペーン
+  summary: local style
+  LastUpDate: 2010-10
+--------------------------------------*/
+
+/* SNSボタン追加 2012/11
+------------------------------*/
+#header{
+	width:760px;
+	margin: 0 auto;
+}
+#header .logo{
+	float:left;
+	width:200px;
+}
+#header .snsArea{
+	float:right;
+	margin:20px 0 0 0;
+	padding:0;
+	width:500px;
+	background:none;
+}
+#header .snsArea .snsSEJ{
+	float:left;
+	margin:8px 5px 0 0;
+	width:100px;
+	font-size:12px;
+	line-height:110%;
+	color:#FFF;
+	font-weight:bold;
+}
+#header .snsArea .snsButton{
+	
+}
+#header .snsArea .snsButton ul{
+	float:right;
+}
+#header .snsArea .snsButton li{
+	float:left;
+	margin:0 0 0 10px;
+	padding:5px 0 0;
+}
+#header .snsArea .snsButton li.hatena{
+	height:20px;
+	line-height:0.1;
+}
+
+#content{
+	background:none;
+}
+#contentIn{
+	background:#ffffff url(../../uploads/cmn/bg_bottom.gif) repeat-y;
+	color:#000;
+	border-bottom:#787878 solid 1px;
+	
+}
+#header{
+	position:relative;
+}
+#header h1{
+	position:absolute;
+	background:none;
+}
+
+.gNav {
+	height:32px;
+	margin:0 0 0px;
+	padding:0px 0 0 0;
+	background:url(../../uploads/cmn/bg_nav.png) repeat-x bottom;
+}
+.gNav li {
+	display:inline;
+	margin:0;
+	background:none;
+	line-height:1;
+	font-size:0;
+}
+.gNav_btl{float:left; padding:4px 0 0 0;}
+.gNav_btr{float:right; padding:4px 7px 0 0;}
+
+
+.main_l_over{
+	width:760px;
+	text-align:center;
+	padding-bottom:20px;
+}
+
+
+/* loginArea
+------------------------------*/
+.loginArea { background:url(../../uploads/cmn/side_bg.gif) repeat-y;}
+.login {
+	padding-bottom:15px;
+	background:url(../../uploads/cmn/side_btm.gif) no-repeat bottom;
+}
+.login dd dd input { width:179px; }
+
+.login .begin {
+	margin:0px;
+	padding:0px;
+}
+.login .begin dt,
+.login .end dt {
+	margin:0px;
+	padding:0px;
+	font-size:0px;
+	line-height:0px;
+}
+
+.login .begin dd { padding:5px 0 8px; }
+.login .begin p { padding:0px 0 8px 0; }
+.login .end p { padding:5px 0 8px 0; }
+.login .entry dt{ margin:0px 0; }
+.login .entry li,
+.login .entry dl { margin-top:0px; }
+.login .entry p { margin-top:10px; }
+.login .resent{	margin:12px 10px 0 10px; }
+.login .resent li{
+	margin-top:5px;
+	padding-left: 10px;
+	font-weight:bold;
+	font-size:83%;
+	text-align:left;
+}
+
+.login .bt_registration{padding-top:8px;}
+
+.login .passwhat{margin-top:8px;}
+
+.intro{
+	margin: 0;
+}
+.intro h2{
+	margin: 0;
+}
+.intro div{
+	padding:0px;
+}
+.intro em{
+	color:#fff000;
+	font-weight:bold;
+	font-size:116%;
+}
+
+.section{
+	margin:0 0 10px;
+	padding:0 0 10px;
+}
+
+/* flow,win
+------------------------------*/
+.win{
+	padding:0 0 7px;
+	text-align:center;
+}
+.win ul{
+	position:relative;
+	margin:0 0 3px -7px;
+}
+
+.flow {
+	margin:0 -4px 8px 0;
+}
+.flow li{
+	position:relative;
+}
+.flow li a,
+.flow li span{
+	position:absolute;
+	top:55px;
+	left:86px;
+}
+
+.win li,
+.flow li {
+	float:left;
+}
+.win ul,
+.flow { /zoom : 1;
+}
+.win ul:after,
+.flow:after {
+	content : '';
+	display : block;
+	clear : both;
+}
